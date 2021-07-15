@@ -1,6 +1,6 @@
 import "./App.css";
 import Container from "react-bootstrap/Container";
-import Moves from "./components/Moves";
+import Launches from "./components/Launches";
 
 if (process.env.NODE_ENV === "development") {
   const { worker } = require("./mocks/browser");
@@ -12,7 +12,7 @@ function App() {
     <Container fluid>
       <h1 as="h1">Test GQL</h1>
 
-      <Moves />
+      <Launches />
     </Container>
   );
 }
